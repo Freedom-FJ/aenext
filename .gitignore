@@ -1,0 +1,16 @@
+node_modules
+/dist
+/es
+/lib
+/docs-dist
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
+.DS_Store
+/.history
+test.json
+test1.json
+/.dumi
+umd/
+.yalc/
+yalc.lock

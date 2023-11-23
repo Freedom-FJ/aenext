@@ -1,0 +1,76 @@
+{
+  "name": "@alife/kernel-check",
+  "version": "0.0.1",
+  "description": "Identity Verification Component",
+  "repository": "git@gitlab.alibaba-inc.com:gdc-fe/kernel-check.git",
+  "license": "MIT",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/es/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf ./{dist}",
+    "build": "npm run build:lib && npm run build:doc",
+    "postbuild1": "mv ./docs-dist/code/npm/@alife/kernel-check/0.0.1/* ./dist/ && rm -r docs-dist/code && mv ./docs-dist/* ./dist/",
+    "build:doc": "npx dumi build",
+    "build:lib": "npx father build",
+    "build:watch": "npx father dev",
+    "watch": "nodemon --watch src --exec \"yalc publish\"",
+    "dev": "dumi dev",
+    "doctor": "father doctor",
+    "precommit": "npx umi-lint src/**/*.ts src/**/*.scss --staged --eslint --stylelint --prettier --fix",
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "npm run build",
+    "start": "npm run dev"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "@alifd/next": "^1.26.18",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@umijs/lint": "^4.0.0",
+    "dumi": "^2.2.13",
+    "eslint": "^8.23.0",
+    "father": "^4.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "stylelint": "^14.9.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.antfin-inc.com"
+  },
+  "authors": [
+    "ann.zar@alibaba-inc.com"
+  ],
+  "father": {
+    "targets": {
+      "esm": {
+        "typescript": false,
+        "babel": false
+      }
+    }
+  }
+}
