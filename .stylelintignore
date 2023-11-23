@@ -1,0 +1,11 @@
+node_modules/
+build/
+dist/
+coverage/
+es/
+lib/
+docs-dist/
+**/*.min.css
+**/*-min.css
+**/*.bundle.css
+vendors/

@@ -15,13 +15,13 @@
         ".dumi/tmp/*"
       ],
       "@aenext": [
-        "packages/index.ts"
+        "src/index.ts"
       ]
     }
   },
   "include": [
     ".dumirc.ts",
-    "packages/**/*",
+    "src/**/*",
     "types.d.ts"
   ]
 }

@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# production
+build/
+dist/
+docs-dist/
+
+# tools
+.chc/
+.ice/
+.idea/
+
+# misc
+.happypack
+.DS_Store
+*.swp
+*.dia~
+README.md
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# minified
+**/*-min.*
+**/*.min.*
+mock/*

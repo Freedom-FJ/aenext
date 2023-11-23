@@ -25,6 +25,6 @@ export default defineConfig({
   },
   styles: ['https://g.alicdn.com/code/lib/alifd__next/1.25.38/next.min.css'],
   resolve: {
-    docDirs: ['docs', 'packages/components'],
+    docDirs: ['docs', 'src/components'],
   },
 });
