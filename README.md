@@ -1,7 +1,5 @@
-# kernel-check
+# aenext
 
-[![NPM version](https://img.shields.io/npm/v/kernel-check.svg?style=flat)](https://npmjs.org/package/kernel-check)
-[![NPM downloads](http://img.shields.io/npm/dm/kernel-check.svg?style=flat)](https://npmjs.org/package/kernel-check)
 
 Identity Verification Component
 
@@ -33,10 +31,3 @@ $ tnpm run postbuild
 
 MIT
 
-## 埋点相关
-
-整体核身 sdk 相关埋点：
-https://sg.aem.alibaba-inc.com/project/kernel-check/page/setting/edit
-
-未分类里面有个业务单元指标 dim2
-可以基于业务单元进行分类筛选数据
