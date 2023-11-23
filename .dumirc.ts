@@ -8,11 +8,11 @@ export default defineConfig({
   outputPath: 'docs-dist',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   runtimePublicPath: {},
-
   themeConfig: {
     name: 'aenext',
     nav: [
       { title: '首页', link: '/' },
+      { title: '快速开始', link: '/quick-start' },
       {
         title: '组件',
         link: '/number-picker',

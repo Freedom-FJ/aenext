@@ -1,12 +1,12 @@
 ---
 hero:
-  title: '@alife/kernel-check'
-  description: Identity Verification Component
+  title: 'aenext'
+  description: 为fusion组建库提供更专业的ae金融相关组建
   actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
+    - text: 快速开始
+      link: /quick-start
+    - text: 组建库
+      link: /number-picker
 features:
   - title: Hello
     emoji: 💎
